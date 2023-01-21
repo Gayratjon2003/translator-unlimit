@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/translator-unlimit/static/css/main.1a3abddc.css",
+    "main.js": "/translator-unlimit/static/js/main.e5c9fe59.js",
+    "index.html": "/translator-unlimit/index.html",
+    "main.1a3abddc.css.map": "/translator-unlimit/static/css/main.1a3abddc.css.map",
+    "main.e5c9fe59.js.map": "/translator-unlimit/static/js/main.e5c9fe59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a3abddc.css",
+    "static/js/main.e5c9fe59.js"
+  ]
+}
