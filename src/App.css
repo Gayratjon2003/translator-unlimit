@@ -1,38 +1,115 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: calc(100vh - 110px);
+}
+html {
+  overflow: hidden;
+}
+
+.top-title {
+  font-family: "Roboto", "Sans-serif";
+  font-weight: 500 !important;
   text-align: center;
+  color: #3b94ed !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  width: 90% !important;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.box-textarea {
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.box-textarea-child {
+  width: 45%;
+}
+
+.select-box {
+  margin-bottom: 20px;
+}
+
+.box-textarea-child-center {
+  width: 80px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.select-right, .select-left {
+  min-width: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.swapBtn {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.copy-icon-right, .copy-icon-left {
+  font-size: 20px;
+  opacity: 0.5;
+  margin-top: 3px;
+}
+
+#copyBtnControl {
+  display: none;
+}
+
+.copy-icon-left-clicked::after {
+  content: " copied";
+  font-size: 15px;
+}
+
+.footer {
+  height: 90px;
+  background-color: #EEF1F3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer a {
+  text-decoration: none;
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .box-textarea {
+    flex-direction: column;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .box-textarea-child-center {
+    margin-bottom: 15px !important;
+  }
+
+  .box-textarea-child {
+    width: 100%;
+  }
+
+  .swapBtn {
+    margin: 0;
+    margin-right: 30px;
   }
 }
